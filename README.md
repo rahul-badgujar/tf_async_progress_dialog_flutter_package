@@ -49,8 +49,8 @@ await showAsyncProgressDialog(
         progress: AspectRatio(
         aspectRatio: 1.0,
         child: Image.asset(
-            'assets/gif/loading.gif',
-        ),
+                'assets/gif/loading.gif',
+            ),
         ),
         decoration: BoxDecoration(
         color: Colors.white,
@@ -68,15 +68,15 @@ try {
         demoProcess,
         message: const Text('In progress...'),
         progress: AspectRatio(
-        aspectRatio: 1.0,
-        child: Image.asset(
-            'assets/gif/loading.gif',
-        ),
+            aspectRatio: 1.0,
+            child: Image.asset(
+                'assets/gif/loading.gif',
+            ),
         ),
         decoration: BoxDecoration(
-        color: Colors.white,
-        shape: BoxShape.rectangle,
-        borderRadius: BorderRadius.circular(15),
+            color: Colors.white,
+            shape: BoxShape.rectangle,
+            borderRadius: BorderRadius.circular(15),
         ),
     ),
     );
