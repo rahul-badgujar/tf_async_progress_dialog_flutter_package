@@ -1,7 +1,7 @@
 name: tf_async_progress_dialog
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: Provides TfAsyncProgressDialog Widget which can be used to show a progress dialog for an asynchronous task untill the task completes or causes exception.
+version: 1.0.0
+homepage: https://github.com/rahul-badgujar/tf_async_progress_dialog_flutter_package.git
 
 environment:
   sdk: ">=2.15.1 <3.0.0"
