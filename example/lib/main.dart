@@ -45,6 +45,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 dialog: TfAsyncProgressDialog<bool>(
                   demoProcess,
                   message: const Text('In progress...'),
+                  progress: AspectRatio(
+                    aspectRatio: 1.0,
+                    child: Image.asset(
+                      'assets/gif/loading.gif',
+                    ),
+                  ),
                 ),
               );
               ScaffoldMessenger.of(context)
@@ -61,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<bool> demoProcess() async {
-    final task = Future.delayed(const Duration(seconds: 2));
+    final task = Future.delayed(const Duration(seconds: 3));
     await task;
     // for exception handling demo
     final shouldThrowError = Random().nextInt(3) == 0;
