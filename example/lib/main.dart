@@ -51,6 +51,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       'assets/gif/loading.gif',
                     ),
                   ),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(15),
+                  ),
                 ),
               );
               ScaffoldMessenger.of(context)
